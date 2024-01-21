@@ -1,0 +1,9 @@
+/* Type your code here */
+
+body {
+  font-family: sans-serif;
+}
+
+.hide-on-page-load {
+  display: none;
+}
