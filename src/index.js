@@ -29,13 +29,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
   // Set userId and call trackPageview API + send relevant data
   const callTrackPageview = () => {
-    return new Promise((resolve) => {
-      trackPageview({
-        userId: localStorage.getItem("userId"),
-      });
-
-      resolve();
+    trackPageview({
+      userId: localStorage.getItem("userId"),
     });
+
+    return Promise.resolve();
   };
 
   // If localStorage object contains Id for random variation, display that variation; otherwise display random variation from variation NodeList
